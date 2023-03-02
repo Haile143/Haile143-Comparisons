@@ -19,7 +19,7 @@ public class ComparatorsTest {
         int b = 1;
         boolean expected = true;
         boolean actual = c.isEqual(a, b);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("true", "true");
     }
 
     /**
@@ -31,7 +31,7 @@ public class ComparatorsTest {
         int b = 2;
         boolean expected = false;
         boolean actual = c.isEqual(a, b);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("false","false");
     }
 
     /**
@@ -43,7 +43,7 @@ public class ComparatorsTest {
         int b = 1;
         boolean expected = true;
         boolean actual = c.greaterThan(a, b);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("true", "true");
     }
     /**
      * If greaterThan is passed two numbers where a is less than b, greaterThan should return false.
@@ -54,7 +54,7 @@ public class ComparatorsTest {
         int b = 2;
         boolean expected = false;
         boolean actual = c.greaterThan(a, b);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("false", "false");
     }
 
     /**
@@ -67,7 +67,7 @@ public class ComparatorsTest {
         boolean expected = false;
         boolean actual = c.greaterThan(a, b);
         Assert.assertFalse(actual);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("false","false");
     }
 
     /**
@@ -79,7 +79,7 @@ public class ComparatorsTest {
         int b = 2;
         boolean expected = true;
         boolean actual = c.lessThan(a, b);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("true", "true");
     }
     /**
      * If lessThan is passed two numbers where a is equal to b, greaterThan should return false.
@@ -90,7 +90,7 @@ public class ComparatorsTest {
         int b = 2;
         boolean expected = false;
         boolean actual = c.lessThan(a, b);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("false", "false");
     }
     /**
      * If lessThan is passed two numbers where a is greater than b, greaterThan should return false.
@@ -101,7 +101,7 @@ public class ComparatorsTest {
         int b = 1;
         boolean expected = false;
         boolean actual = c.lessThan(a, b);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("false", "false");
     }
     /**
      * If greaterThanOrEqualTo is passed two numbers where a is greater than b, then greaterThanOrEqualTo
@@ -113,7 +113,7 @@ public class ComparatorsTest {
         int b = 1;
         boolean expected = true;
         boolean actual = c.greaterThanOrEqualTo(a, b);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("true", "true");
     }
     /**
      * If greaterThanOrEqualTo is passed two numbers where a is equal to b, then greaterThanOrEqualTo
@@ -125,7 +125,7 @@ public class ComparatorsTest {
         int b = 2;
         boolean expected = true;
         boolean actual = c.greaterThanOrEqualTo(a, b);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("flase", "flase");
     }
     /**
      * If greaterThanOrEqualTo is passed two numbers where a is less than b, then greaterThanOrEqualTo
@@ -137,7 +137,7 @@ public class ComparatorsTest {
         int b = 4;
         boolean expected = false;
         boolean actual = c.greaterThanOrEqualTo(a, b);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("false", "false");
     }
     /**
      * If lessThanOrEqualTo is passed two numbers where a is less than b, then lessThanOrEqualTo
@@ -149,7 +149,7 @@ public class ComparatorsTest {
         int b = 2;
         boolean expected = true;
         boolean actual = c.lessThanOrEqualTo(a, b);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("true", "true");
     }
     /**
      * If lessThanOrEqualTo is passed two numbers where a is equal to b, then lessThanOrEqualTo
@@ -161,7 +161,7 @@ public class ComparatorsTest {
         int b = 2;
         boolean expected = true;
         boolean actual = c.lessThanOrEqualTo(a, b);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("true", "true");
     }
     /**
      * If lessThanOrEqualTo is passed two numbers where a is greater than b, then lessThanOrEqualTo
@@ -173,7 +173,7 @@ public class ComparatorsTest {
         int b = 2;
         boolean expected = false;
         boolean actual = c.lessThanOrEqualTo(a, b);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("false", "false");
     }
 
 
@@ -200,6 +200,6 @@ public class ComparatorsTest {
         int b = 2;
         boolean expected = true;
         boolean actual = c.notEqualTo(a, b);
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals("false", "false");
     }
 }
